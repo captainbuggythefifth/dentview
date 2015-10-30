@@ -1,0 +1,70 @@
+         <?php if(isset($all_photos))
+                                {
+                                    foreach($all_photos as $photo)
+                                    {
+                                        echo '{href : '.$photo['source'].',title : '.$photo['name'].'}';
+                                    }
+                                }
+                                ?>
+
+
+
+<script type="text/javascript"> 
+     $(document).ready(function() {
+        $("#fancybox-manual-c").click(function() {
+            alert("Added to your cart!");
+				$.fancybox.open([
+//					{
+//						href : '1_b.jpg',
+//						title : 'My title'
+//					}, {
+//						href : '2_b.jpg',
+//						title : '2nd title'
+//					}, {
+//						href : '3_b.jpg'
+                                        <?php if(isset($all_photos))
+                                {
+                                    foreach($all_photos as $photo)
+                                    {
+                                        echo '{ href : '.$photo['source'].',title : '.$photo['name'].'},';
+                                    }
+                                }
+                                
+                                ?>
+//					}
+                                
+
+
+                            
+                                
+				], {
+					helpers : {
+						thumbs : {
+							width: 75,
+							height: 50
+						}
+					}
+				});
+			});
+});
+
+
+
+
+
+
+
+         <?php if(isset($services_with_photos))
+                {
+                    for($i=0;;$i++)
+                    {
+                        ?>
+                        <li><a id="fancybox-manual-<?php echo $services_with_photos[$i]['name']?>" href="javascript:;"><?php echo $services_with_photos[$i]['name']?></a></li>
+                <?php
+                    
+                        if(!isset($services_with_photos[$i+1]))
+                        {
+                            break;
+                        }
+                    }
+                }?>

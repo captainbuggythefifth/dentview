@@ -1,0 +1,4 @@
+12/22/2012 - Finished with "Account Register, Login, Logout" but has encountered a problem with setting the date format "Y-m-d"
+	Done with back-end support but the passwords should never be edited by the admin
+
+	

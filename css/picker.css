@@ -1,0 +1,109 @@
+body{
+font-size: 10pt;
+font-family:arial, verdana, helvetia, sans-serif;
+background-color: #ffffcc;
+}
+td{
+font-size: 10pt;
+font-family:arial, verdana, helvetia, sans-serif;
+background-color: #ffffcc;
+}
+.handClock{
+font-family:arial, verdana, helvetia, sans-serif;
+font-size: 15px;
+font-weight: bold;
+position: absolute;
+top:0px;
+left:0px;
+cursor:default;
+z-index:10;
+}
+.close{
+position: absolute;
+cursor:pointer;
+}
+#pick{
+font-size: 12pt;
+font-family:arial, verdana, helvetia, sans-serif;
+overflow:hidden;
+position: relative;
+left:0;/*adjust this for the left position of the time picker*/
+top:0;/*adjust this for the top position of the time picker*/
+display:none;
+border:1px solid black;
+width:281px;
+height:167px;
+background-color:#ff9966;
+z-index:1;
+}
+.pickClock{
+color:black;
+cursor:pointer;
+width:20;
+height:20;
+font-family: arial;
+font-size: 11px;
+font-weight: bold;
+position: absolute;
+top:0px;
+left:0px;
+text-align:center;
+z-index:10;
+}
+.btn{
+cursor:pointer;
+font-family: arial;
+font-size: 10px;
+width:36;
+height:18;
+display:none;
+}
+.btn2{
+cursor:pointer;
+font-family: arial;
+font-size: 10pt;
+width:120;
+height:27;
+}
+.disp{
+width:281;
+height:20;
+font-family: arial;
+font-size: 10px;
+font-weight: bold;
+position: absolute;
+top:0px;
+left:0px;
+text-align:center;
+z-index:10;
+}
+.help{
+display:none;
+width:271;
+height:157;
+font-family:arial, verdana, helvetia, sans-serif;
+font-size: 7pt;
+background-color: #cccccc;
+font-weight: bold;
+position: relative;
+left:0;
+top:-167;/*put this to the top position of the time picker minus its' height*/
+border:1px solid black;
+padding:5px;
+overflow:auto;
+z-index:15;
+}
+.high{
+cursor:pointer;
+color:lime;
+width:20;
+height:20;
+font-family: arial;
+font-size: 12px;
+font-weight: bold;
+position: absolute;
+top:0px;
+left:0px;
+text-align:center;
+z-index:10;
+}
