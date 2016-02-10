@@ -30,7 +30,17 @@ if (isset($_GET['msg'])) {
                                 $.fancybox.open('#sign_up');
             <?php
         }
-    } else {
+    }
+        elseif($_GET['msg'] == "npfsm"){
+            ?>
+
+                $.fancybox.open('#new_patient_failed_send_mail');
+                setTimeOut(function(){
+                    window.location = "<?php echo base_url() ?>"
+                },2000);
+            <?php
+        }
+        else {
         ?>
                     $.fancybox.open('#log_in');
     <?php }
@@ -336,6 +346,16 @@ if (isset($services_with_photos)) {
 <div id="link_for_reserve" style="width:400px;display: none;">
     <div class="bg_table" style="padding:10px; height:320px;">
         Please do log in or sign up first to access this page.
+    </div>
+</div>
+
+<div id="new_patient_failed_send_mail" style=" display: none; width: 300; height: auto">
+    <div class="bg_table" style="padding:10px; height:auto;">
+        <center>
+            <div style="padding: 20px;">
+                <p>It seems that the email did not send out. Please type in this number on the log in pop up: <?php echo $_GET['cid'] ?></p>
+            </div>
+        </center>
     </div>
 </div>
 

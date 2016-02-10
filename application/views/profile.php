@@ -123,15 +123,15 @@ if (!isset($this->session->userdata['patient_info']['id'])) {
                 <div class="box">
                     <div class="menu">
                         <ul>
-                            <li><img src="<?php echo base_url() ?>/images/icon/user.png">Name: <a href="#"><?php echo $this->session->userdata['patient_info']['first_name'] . " " . $this->session->userdata['patient_info']['mi'] . " " . $this->session->userdata['patient_info']['last_name']; ?></a></li>
-                            <li><img src="<?php echo base_url() ?>/images/icon/contact.png">Mobile Number: <a href="#"><?php echo $this->session->userdata['patient_info']['mobile_number'] ?></a></li>
-                            <li><img src="<?php echo base_url() ?>/images/icon/address.png">Address: <a href="#"><?php echo $this->session->userdata['patient_info']['address'] ?></a></li>
-                            <li><img src="<?php echo base_url() ?>/images/icon/age.png">Age: <a href="#"><?php echo $this->session->userdata['patient_info']['age'] ?></a></li>
+                            <li><img src="<?php echo base_url() ?>images/icon/user2.png">Name: <a href="#"><?php echo $this->session->userdata['patient_info']['first_name'] . " " . $this->session->userdata['patient_info']['mi'] . " " . $this->session->userdata['patient_info']['last_name']; ?></a></li>
+                            <li><img src="<?php echo base_url() ?>images/icon/contact2.png">Mobile Number: <a href="#"><?php echo $this->session->userdata['patient_info']['mobile_number'] ?></a></li>
+                            <li><img src="<?php echo base_url() ?>images/icon/address.png">Address: <a href="#"><?php echo $this->session->userdata['patient_info']['address'] ?></a></li>
+                            <li><img src="<?php echo base_url() ?>images/icon/age.png">Age: <a href="#"><?php echo $this->session->userdata['patient_info']['age'] ?></a></li>
                             <!--<li><img src="<?php echo base_url() ?>/images/icon/address.png">Gender: <a href="#"><?php echo $this->session->userdata['patient_info']['gender'] ?></a></li>
                             <li><img src="<?php echo base_url() ?>/images/icon/address.png">Status: <a href="#"><?php echo $this->session->userdata['patient_info']['marital_status'] ?></a></li>
                             <li><img src="<?php echo base_url() ?>/images/icon/address.png">Occupation: <a href="#"><?php echo $this->session->userdata['patient_info']['occupation'] ?></a></li>
                             -->
-                            <li><img src="<?php echo base_url() ?>/images/icon/msg.png">Contact:
+                            <li><img src="<?php echo base_url() ?>images/icon/msg.png">Contact:
                                 <a href="#" title="<?php echo $this->session->userdata['patient_info']['email_add'] ?>">
                                         <?php
                                         $email_add_length = strlen($this->session->userdata['patient_info']['email_add']);

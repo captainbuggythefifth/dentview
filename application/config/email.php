@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 $config['protocol'] = 'smtp';
-$config['smtp_host'] = 'smtp.googlemail.com';
+$config['smtp_host'] = 'smtp.gmail.com';
 $config['smtp_user'] = 'dentviewdentalclinic@gmail.com';
 $config['smtp_pass'] = 'kunsulidad';
 $config['mailtype'] = "html";

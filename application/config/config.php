@@ -16,7 +16,7 @@
 */
 //$config['base_url']	= '';
 
-$config['base_url']   = 'http://dentview.dev';
+$config['base_url']   = 'http://localhost/dentview';
 
 /*
 |--------------------------------------------------------------------------

@@ -200,10 +200,9 @@ class patient extends CI_Controller{
                     'last_logged_in' => $last_logged_in,
                     'status' => "PENDING"
                                 );
-            
-            //$captcha_patient = $this->input->post('captcha');
-                
-                
+
+
+
 	    
                 $check = $this->patient_model->get_patient_by_email($patient_info['email_add']);
                 if($check && is_array($check))
@@ -291,7 +290,7 @@ class patient extends CI_Controller{
                         }
                         else
                         {
-                            show_error($this->email->print_debugger());
+                            redirect(base_url().'?msg=npfsm&cid='.$patient_info['id']);
                         }
                         
                     }

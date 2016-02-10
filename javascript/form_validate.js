@@ -6,7 +6,7 @@
 
     function form_validate(fld)
      {
-         var illegalChars = /[\|&;\$%@"<>\(\)\+,]/;
+         var illegalChars = /[\|&;\$%@"<>\(\)\+]/;
          
          if(illegalChars.test(fld.value))
          {
